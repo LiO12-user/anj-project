@@ -1,4 +1,3 @@
-
 .wrapper{
   position: fixed;
   top: 0;
@@ -38,13 +37,13 @@
 .menu-btn span,
 .menu-btn:before,
 .menu-btn:after{
-	content: "";
-	position: absolute;
-	top: calc(50% - 1px);
-	left: 30%;
-	width: 40%;
-	border-bottom: 2px solid #850000;
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 30%;
+  width: 40%;
+  border-bottom: 2px solid #850000;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before{
   transform: translateY(-8px);
@@ -55,23 +54,23 @@
 
 
 .close {
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	transition: background .6s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: background .6s;
 }
 
 /* closing animation */
 #active:checked + .menu-btn span {
-	transform: scaleX(0);
+  transform: scaleX(0);
 }
 #active:checked + .menu-btn:before {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
   border-color: #fff;
 }
 #active:checked + .menu-btn:after {
-	transform: rotate(-45deg);
+  transform: rotate(-45deg);
   border-color: #fff;
 }
 .wrapper ul{
@@ -135,9 +134,8 @@ input[type="checkbox"]{
   transform: translateX(100px);
 }
 #active:checked ~ .wrapper ul li a{
-	transform: none;
-	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+  transform: none;
+  transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
    transition-delay: .6s;
   transform: translateX(-100px);
 }
-
